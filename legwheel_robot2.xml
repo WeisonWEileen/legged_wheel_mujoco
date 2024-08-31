@@ -58,8 +58,8 @@
     <actuator>
         <!-- <motor name="thigh_left_motor" joint="thigh_left_joint" gear="0.1" />
         <motor name="thigh_right_motor" joint="thigh_right_joint" gear="0.1" /> -->
-        <position name="thigh_left_pos" joint="thigh_left_joint" kp="2" ctrllimited="true" ctrlrange="-0.2 0.5" />
-        <position name="thigh_right_pos" joint="thigh_right_joint" kp="2" ctrllimited="true" ctrlrange="-0.2 0.5" />
+        <position name="thigh_left_pos" joint="thigh_left_joint" kp="10" ctrllimited="true" ctrlrange="-0.2 0.5" />
+        <position name="thigh_right_pos" joint="thigh_right_joint" kp="10" ctrllimited="true" ctrlrange="-0.2 0.5" />
 
         <motor name="wheel_left_motor" joint="wheel_left_joint" gear="0.1" ctrllimited="true" ctrlrange="-1.0 1.0" />
         <motor name="wheel_right_motor" joint="wheel_right_joint" gear="0.1" ctrllimited="true" ctrlrange="-1.0 1.0" />
