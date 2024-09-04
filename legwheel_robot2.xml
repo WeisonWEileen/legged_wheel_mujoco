@@ -61,6 +61,11 @@
     <equality>
         <connect body1="root" body2="rod_left" anchor="-0.043 0.06 0.02"/>
         <connect body1="root" body2="rod_right" anchor="-0.043 -0.06 0.02"/>
+
+        <!-- <weld body1="thigh_left" body2="calf_left" />
+        <weld body1="calf_left" body2="rod_left" />
+        <weld body1="thigh_right" body2="calf_right" />
+        <weld body1="calf_right" body2="rod_right" /> -->
     </equality>
     <actuator>
         <!-- <motor name="thigh_left_motor" joint="thigh_left_joint" gear="0.1" />
@@ -71,13 +76,18 @@
         <motor name="wheel_left_motor" joint="wheel_left_joint" gear="1" ctrllimited="true" ctrlrange="-1.0 1.0" />
         <motor name="wheel_right_motor" joint="wheel_right_joint" gear="1" ctrllimited="true" ctrlrange="-1.0 1.0" />
     </actuator>
-    <!-- <sensor>
+    <sensor>
         <gyro name="gyro" site="root"/>
         <accelerometer name="accel" site="root"/>
+
+        <actuatorpos name="thigh_left_pos" actuator="thigh_left_pos" />
+        <actuatorpos name="thigh_right_pos" actuator="thigh_right_pos" />
+        <actuatorvel name="thigh_left_vel" actuator="thigh_left_pos" />
+        <actuatorvel name="thigh_right_vel" actuator="thigh_right_pos" />
 
         <actuatorpos name="wheel_left_pos" actuator="wheel_left_motor" />
         <actuatorpos name="wheel_right_pos" actuator="wheel_right_motor" />
         <actuatorvel name="wheel_left_vel" actuator="wheel_left_motor" />
         <actuatorvel name="wheel_right_vel" actuator="wheel_right_motor" />
-    </sensor> -->
+    </sensor>
 </mujoco>
