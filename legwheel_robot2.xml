@@ -10,10 +10,10 @@
         <default class="leg">
             <!-- <joint armature="0.001" damping="1" stiffness="0" /> -->
             <!-- <joint damping="0.1" stiffness="0" armature="0.001" limited="true" solimplimit="0 .99 .01" range="-90 90" /> -->
-            <joint damping=".01" stiffness="1" armature=".001" />
+            <joint damping=".01" stiffness="1" armature="100" />
         </default>
         <default class="wheel">
-            <joint armature="0.001" damping="0.01" stiffness="0." />
+            <joint armature="0.1" damping="0.01" stiffness="0." />
         </default>
     </default>
     <worldbody>
