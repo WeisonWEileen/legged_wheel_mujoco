@@ -18,7 +18,7 @@
     </default>
     <worldbody>
         <geom name="floor" pos="0 0 -.05" size="10 10 .2" type="plane" material="grid"/>
-        <body name="root" pos="0 0 0.10927" euler="0 0 0">
+        <body name="root" pos="0 0 0.10927" euler="0 0 45">
             <freejoint name="root_joint" />
             <site name="root" pos="0 0 0.03" size="0.01" rgba="0 0 0 1"/>
             <geom size="0.05 0.05 0.03" type="box" rgba="0 0 0.8 1"  material="self"/>
